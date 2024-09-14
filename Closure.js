@@ -1,0 +1,1 @@
+//laxical scope: global
