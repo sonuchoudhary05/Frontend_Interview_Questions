@@ -1,0 +1,11 @@
+.typehead-autocomplete{
+  width:200px;
+  height:30px;
+  border: 1px solid black;
+}
+.type-head{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
