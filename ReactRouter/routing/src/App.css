@@ -1,0 +1,17 @@
+body{
+  padding: 10px;  
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  gap:20px;
+}
+.active{
+  color: red;
+}
+.text-copmponent{
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
