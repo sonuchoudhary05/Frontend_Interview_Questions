@@ -1,0 +1,16 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: "20px";
+  margin: "20px";
+  padding: "0px";
+}
+.product {
+  height: "50px";
+  padding: "20px";
+  width: "50px";
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+  border-radius: "5px";
+  cursor: pointer;
+}

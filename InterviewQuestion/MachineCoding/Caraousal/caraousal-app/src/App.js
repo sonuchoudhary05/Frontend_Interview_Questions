@@ -36,6 +36,8 @@ const App = () => {
     fetchImages(8);
   }, []);
 
+  console.log("Images is :", images)
+
   return (
     <div className="carousel-container">
       <Carousel

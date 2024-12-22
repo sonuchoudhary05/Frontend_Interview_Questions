@@ -40,3 +40,19 @@ btn.addEventListener('click', () => {
     btnPressed.innerHTML = ++pressedCount;
     throttalTrigged(0);
 });
+
+const div1 = document.querySelector('#div1');
+const div2 = document.querySelector('#div2');
+const div3 = document.querySelector('#div3');
+
+div1.addEventListener('click', (e) => {
+    alert('current Target: ' + e.currentTarget.id + ' Target: ' + e.target.id);
+});
+
+div2.addEventListener('click', (e) => {
+    alert('current Target: ' + e.currentTarget.id + ' Target: ' + e.target.id);
+});
+
+div3.addEventListener('click', (e) => {
+    alert('current Target: ' + e.currentTarget.id + ' Target: ' + e.target.id);
+});
