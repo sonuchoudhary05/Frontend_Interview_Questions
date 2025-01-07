@@ -21,7 +21,7 @@ function App() {
     else{
       setFormData({
         ...formData,
-        [name]: type === "radio" ? checked : value,
+        [name]: value,
       });
     }
   };

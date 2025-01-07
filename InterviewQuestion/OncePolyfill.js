@@ -9,7 +9,7 @@ const once = (func, context) => {
     }
 };
 
-const hello = (name) => {conspole.log(`Hello ${name}`)};
+const hello = (name) => once(console.log(`Hello ${name}`));
 
 hello("Sonu Choudhary");
 hello("Sonu Choudhary");

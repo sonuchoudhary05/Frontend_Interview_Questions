@@ -47,6 +47,7 @@ function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll",handleScroll)
   }, [handleScroll]);
+  
   return (
     <div className="products">
       {products.length > 0 &&

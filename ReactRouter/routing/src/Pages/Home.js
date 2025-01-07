@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 const Home = () => {
-  const navigate = useNavigate
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -14,7 +14,7 @@ const Home = () => {
   
   return (
     <div>
-     <form onSubmit = {() => handleSubmit}>
+     <form onSubmit = {handleSubmit}>
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" />
         <label htmlFor="password">Password</label>

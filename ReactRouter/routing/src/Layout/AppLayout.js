@@ -5,7 +5,6 @@ import Header from '../Header/header'
 const AppLayout = () => {
   return (
     <div>
-      <p>App Layout</p>
       <Header />
       <Outlet />
     </div>
