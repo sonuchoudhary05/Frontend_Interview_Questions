@@ -14,11 +14,11 @@ const Carousel = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imgWidth, setImgWidth] = useState(0);
 
-  useEffect(() => {
-    if (images.length > 0) {
-      setCurrentIndex(0);
-    }
-  }, [images]);
+    useEffect(() => {
+      if (images.length > 0) {
+        setCurrentIndex(0);
+      }
+    }, [images]);
 
   const goToPrev = () => {
     setCurrentIndex((prevIndex) =>

@@ -1,0 +1,21 @@
+.board{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.cell{
+  height : 100px;
+  width : 100px;
+}
+.status{
+  display:flex;
+  font-size: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.game{
+  max-width: calc((3*100px));
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
