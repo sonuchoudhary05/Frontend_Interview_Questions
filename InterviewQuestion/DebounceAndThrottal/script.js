@@ -55,8 +55,8 @@ div2.addEventListener('click', (e) => {
 
 div3.addEventListener('click', (e) => {
     alert('current Target: ' + e.currentTarget.id + ' Target: ' + e.target.id);
+    e.stopPropagation();
 });
-
 // Prototype Chaining
 const obj = {
     name: 'Sachin',
