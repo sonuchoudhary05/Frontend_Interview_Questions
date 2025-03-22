@@ -56,3 +56,32 @@ div2.addEventListener('click', (e) => {
 div3.addEventListener('click', (e) => {
     alert('current Target: ' + e.currentTarget.id + ' Target: ' + e.target.id);
 });
+
+// Prototype Chaining
+const obj = {
+    name: 'Sachin',
+    age: 24,
+    city: 'Bangalore',
+    /*toString: function(){
+        console.log('Name: ' + this.name + ' Age: ' + this.age + ' City: ' + this.city);
+    }
+        */
+}
+
+function Animal(name){
+    this.name = name;
+}
+
+Animal.prototype.getName = function(){
+    return this.name;
+}
+
+const animal = new Animal('Dog');
+function Dog(name, color){
+    Animal.call(this, name);
+    this.color = color;
+}
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+const dog = new Dog('Tommy', 'Black');
