@@ -63,7 +63,7 @@ function App() {
                   value={editingTaskText}
                   onChange={(e) => setEditingTaskText(e.target.value)}
                 />
-                <button onClick={saveEditTask}>Save</button>
+                <button onClick={() => saveEditTask(task.id)}>Save</button>
                 <button onClick={cancelEditTask}>Cancel</button>
               </>
             ) : (

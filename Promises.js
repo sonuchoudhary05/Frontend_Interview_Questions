@@ -41,10 +41,12 @@ Promise.prototype.all = function (promises) {
           if (pending === 0) {
             resolve(result);
           }
+        }
+        ).catch((error) => {
+          reject(error);
         });
       });
     }
-    reject("Failed");
   });
 };
 

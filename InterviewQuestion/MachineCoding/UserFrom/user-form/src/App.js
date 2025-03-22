@@ -9,7 +9,7 @@ function App() {
     country: '',
   });
   const handleFromData = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type } = e.target;
     if (type === 'checkbox') {
       setFormData((prev) => {
         const hobbies = prev.hobbies.includes(value)
@@ -88,5 +88,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+  export default App;
