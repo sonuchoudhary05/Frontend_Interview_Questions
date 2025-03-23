@@ -1,16 +1,14 @@
-import React from 'react'
-import { Outlet } from 'react-router'
-import Header from './Header'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
 
 const AppLayout = () => {
   return (
-    <div className='p-6'>
-        <Header />
-      <main>
-      <Outlet />
-      </main>
+    <div>
+      <Header /> {/* Always visible */}
+      <Outlet /> {/* This renders the child route (Products, Cart, etc.) */}
     </div>
-  )
-}
+  );
+};
 
-export default AppLayout
+export default AppLayout;

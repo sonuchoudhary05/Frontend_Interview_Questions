@@ -10,14 +10,14 @@ const cartSlice = createSlice({
     initialState: initialState,
     reducers : {
         addToCart : (state, action) => {
-            state.cart = action.payload;
+            state.cart = [...state.cart, action.payload];
         },
-        removeToCart : (state, action) => {
-            state.cart = state.cart.filter((prod) => prod.id !== action.payload.id)
-        },
-        resetToCart : (state) => {
-            state.cart = []
-        }   
+        removeToCart: (state, action) => {
+            const index = state.cart.findIndex(prod => prod.id === action.payload);
+            if (index !== -1) {
+                state.cart.splice(index, 1);
+            }
+        }
     }
 })
 

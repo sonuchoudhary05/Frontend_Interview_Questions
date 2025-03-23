@@ -1,24 +1,30 @@
-import { createBrowserRouter, RouterProvider } from 'react-router';
-import AppLayout from './Component/AppLayout';
-import Home from './Component/Home';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom"; // Use react-router-dom
+import AppLayout from "./Component/AppLayout";
+import Cart from "./Component/Cart";
+import Header from "./Component/Header";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
     children: [
       {
-        path: '/',
-        element: <Home />
-      }]
+        path: "/",
+        element: <Header /> // Show Products on home page
+      },
+      {
+        path: "/cart",
+        element: <Cart />
+      }
+    ]
   }
-])
+]);
 
 function App() {
   return (
-   <div className='font-bold'>
-    <RouterProvider router={router} />
-   </div>
+    <div className="font-bold">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
