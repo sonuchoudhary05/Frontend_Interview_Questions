@@ -3,7 +3,9 @@ class EventEmitter{
         this.events = {}
     }
     on(event, listener){
-        if(this.events[event]) return;
+        if(!this.events[event]){
+            this.events[event] = [];
+        };
         this.events[event].push(listener);
     }
     of(event, listener){
@@ -26,3 +28,5 @@ emitter.on("greet", greet);
 
 // Emit event
 emitter.emit("greet", "Alice"); 
+emitter.of("greet", greet); // Unsubscribe from event
+emitter.emit("greet", "Bob"); // No output, as the listener has been removed

@@ -50,7 +50,7 @@ Promise.prototype.all = function (promises) {
   });
 };
 
-Promise.all(["dkdkdkkd", "dkdkd", "fkfkdkfkf"])
+Promise.all(["dkdkdkkd", Promise.reject("Error Occurred"), "fkfkdkfkf"])
   .then((message) => {
     console.log("All Promises Resolve: ", message);
   })
