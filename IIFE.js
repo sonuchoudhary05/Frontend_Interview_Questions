@@ -33,13 +33,6 @@ for(var i = 0; i<5; i++){
     close(i);
 }
 
-var x = 20;
-(function(){
-    console.log(x);
-    var x = 10;
-    console.log(x);
-})();
-
 // Spread and Rest Operator
 // Spread Operator
 function sum(a,b,c){

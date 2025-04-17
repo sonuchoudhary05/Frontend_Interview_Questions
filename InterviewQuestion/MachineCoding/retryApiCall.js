@@ -19,4 +19,4 @@ async function fetchDataWithRetry(url, retryCount = 3, dealy = 1000) {
         return fetchDataWithRetry(url, retryCount - 1, dealy*2);
     }
   }
-}
+}l

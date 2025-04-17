@@ -10,7 +10,6 @@ const useFetch = (url,options = {}) => {
             try{
                 setLoading(true);
                 const response = await fetch(url, {...options});
-
                 if(!response.ok){
                     throw new Error(result.message || 'Something went wrong!');
                 }
